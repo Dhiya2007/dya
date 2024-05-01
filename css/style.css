@@ -53,6 +53,9 @@ section {
   cursor: default;
 
 }
+.logo-ph{
+    width: 5rem;
+  }
 .logo a{
   color: #00ffee;
   font-size: 2.5rem;
@@ -371,6 +374,7 @@ span{
           margin-left: 0rem;
           margin-right: 0rem;
   }
+  
 }
 @media (max-width: 991px) {
 
@@ -395,6 +399,9 @@ section {
 @media (max-width: 768px) {
   #menu-icon {
     display: block;
+  }
+  .logo-ph{
+    width: 4rem;
   }
   .portfolio{
   padding-bottom: 7rem;}
