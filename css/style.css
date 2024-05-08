@@ -64,6 +64,7 @@ section {
   cursor: default;
 }
 .navbar a{
+
   font-size: 1.7rem;
   color: var(--text-color);
   margin-left: 4rem;
@@ -313,6 +314,7 @@ span{
   margin-bottom: 3rem;
 }
 .contact form .input-box{
+ 
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -481,13 +483,44 @@ align-items: center;
 .footer-text p {
   font-size: 1.38rem;
 }
-
   .portfolio-layer h1{
     display: block;
     font-size: 3rem;
-    
 } 
 }
+.btt{
+        display: inline-block;
+      padding: 1rem 2.8rem;
+      background: var(--second-bg-color);
+      border-radius:2rem;
+      box-shadow: 0 0 1rem #0ef;
+      font-size: 1.6rem;
+      color: white;
+      letter-spacing: .1rem;
+      font-weight: 600;
+      transition: .5s ease;
+     margin-bottom:4rem;
+  width: 80%;
+    justify-content: space-between;
 
-
-
+}
+.btt:hover{
+  box-shadow: none;
+}
+.btt i{
+  color: #000;
+  font-size: 3rem;
+}
+.btt span{
+  color: var(--text-color);
+  font-size: 1.8rem;
+    margin-right: 4.8rem;
+  margin-left: 4rem;
+  
+}
+.final{
+  margin-top: 15rem;
+}
+.m{
+  margin-top: 5rem;
+}
