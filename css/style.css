@@ -86,6 +86,7 @@ section {
   align-items: center;
 }
 .home-img img {
+  pointer-events: none;
   width: 35vw;
   animation: floatImage 2s ease-in-out infinite;
 }
@@ -173,6 +174,7 @@ span{
 }
 
 .about-img img{
+pointer-events: none;
   width: 35vw;
 }
 .heading {
@@ -257,9 +259,12 @@ span{
   }
   .portfolio-box img{
     width: 130%;
+pointer-events: none;
     transition: .5s ease;
   }
   .portfolio-box:hover img{
+pointer-events: none;
+
     transform: scale(1.1);
   }
   .portfolio-box .portfolio-layer  {
@@ -399,6 +404,7 @@ color: var(--main-color);
 
 .about-img img{
   margin-left: 8rem;
+pointer-events: none;
 }
 .cont{
   
@@ -471,12 +477,14 @@ section {
   }
   .home-img img {
     width: 70vw;
+pointer-events: none;
     margin: 1rem 1rem 2rem;
   }
   .about {
     flex-direction: column;
   }
   .about img {
+    pointer-events: none;
     margin-left: 5rem;
     justify-content: center;
     align-items: center;
