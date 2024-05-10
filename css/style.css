@@ -548,7 +548,7 @@ align-items: center;
 .btt:hover{
   box-shadow: none;
 }
-.btt i{
+.m i{
   color: #0ed;
   font-size: 3rem;
 }
