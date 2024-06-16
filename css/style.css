@@ -173,14 +173,21 @@ span{
   background: var(--second-bg-color);
   
 }
-
+.multiple-text{
+  margin-left: 0.3%;
+}
 .about-img img{
 pointer-events: none;
   width: 35vw;
 }
+.heading span {
+  margin-left: 4%;
+}
+
 .heading {
   text-align: center;
   font-size: 4.5rem;
+  
 }
 
  .about-content h2 {
@@ -392,6 +399,7 @@ pointer-events: none;
   html{
     font-size: 55%;
   }
+
   .logo{
           margin-left: 0rem;
           margin-right: 0rem;
