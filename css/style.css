@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 * {
 
     margin: 0;
@@ -243,6 +244,19 @@ pointer-events: none;
   }
   .portfolio-layer h1{
     display: none;
+     font-family: "Patua One", serif;
+     font-weight: bold; /* سمك الخط */
+     text-shadow: 
+                -2px -2px 0 #000,  
+                 2px -2px 0 #000,
+                -2px  2px 0 #000,
+                 2px  2px 0 #000,
+                 2px  0 0 #000,
+                -2px  0 0 #000,
+                 0   2px 0 #000,
+                 0  -2px 0 #000; /* ظلال متعددة لإنشاء تأثير الحواف السوداء السميكة */
+      color: wheat;
+     
   }
   .portfolio-container{
     display: grid;
@@ -526,7 +540,7 @@ align-items: center;
 }
   .portfolio-layer h1{
     display: block;
-    font-size: 3rem;
+    font-size: 3.5rem;
 } 
 }
 .btt{
