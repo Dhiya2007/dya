@@ -55,7 +55,7 @@ ScrollReveal({
   ScrollReveal().reveal('.about-content', { origin: 'top' });
 /*==================== typed js ====================*/
 const typed = new Typed('.multiple-text',{
-  strings: ['a Programmer', 'an Editor', 'a Designer'],
+  strings: ['a Programmer', 'an Editor','an artist', 'a Designer'],
   typeSpeed: 100,
   backSpeed:100,
   backDelay:1000,
