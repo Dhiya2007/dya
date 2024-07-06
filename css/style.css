@@ -13,10 +13,17 @@
     font-family: 'Poppins', sans-serif;
 }
 :root {
-  --bg-color: #1f242d;
-  --second-bg-color: #323946;
+  --bg-color: #1b1b1b;
+  --second-bg-color: #2e2e2e;
+  --K-bg-color: #383838;
+  --logo1-text: #8848c3;
+  --logo2-text: #00bfa5;
+  --logo2-text: #66cdaa;
+  --logo-text: #5e60ce;
+  --mult-text: #ffcc00;
   --text-color: #fff;
-  --main-color: #0ef
+  --main-color: #0ef;
+  --soc-color: #7f8c8d
 }
 html {
   font-size: 62.5%;
@@ -118,7 +125,7 @@ span{
 }
 
 .home-content h1{
-  color: #8848c3;
+  color: var(--logo-text);
   text-align: center;
   font-size: 5.6rem;
   font-weight: 700;
@@ -136,10 +143,10 @@ span{
   width: 4rem;
   height: 4rem;
   background: transparent;
-  border: .2rem solid var(--main-color);
+  border: .2rem solid var(--soc-color);
   border-radius: 50%;
   font-size: 2rem;
-  color: var(--main-color);
+  color: var(--soc-color);
   margin: 3rem 1.5rem 3rem 0;
   transition: .5s ease;
 }
@@ -175,6 +182,7 @@ span{
 }
 .multiple-text{
   margin-left: 0.3%;
+  color: var(--mult-text);
 }
 .about-img img{
 pointer-events: none;
@@ -226,13 +234,13 @@ pointer-events: none;
   } 
   
    .Services-container .Services-box:hover{
-     border-color: var(--main-color);
+     border-color: var(--logo2-text);
      transform: scale(1.02);
    }
   
   .Services-box i {
     font-size: 7rem;
-    color: var(--main-color);
+    color: var(--logo2-text);
   }
   
   .Services-box h3 {
@@ -253,16 +261,9 @@ pointer-events: none;
     display: none;
      font-family: "Patua One", serif;
      font-weight: bold; /* سمك الخط */
-     text-shadow: 
-                -2px -2px 0 #000,  
-                 2px -2px 0 #000,
-                -2px  2px 0 #000,
-                 2px  2px 0 #000,
-                 2px  0 0 #000,
-                -2px  0 0 #000,
-                 0   2px 0 #000,
-                 0  -2px 0 #000; /* ظلال متعددة لإنشاء تأثير الحواف السوداء السميكة */
-      color: wheat;
+ 
+   
+      color: rgba(0, 0, 0, .6);
      
   }
   .portfolio-container{
@@ -310,6 +311,10 @@ pointer-events: none;
   }
   .portfolio-layer h4{
     font-size: 3rem;
+    
+  }
+  .portfolio-layer h3{
+    font-size: 2.5rem;
     
   }
   .portfolio-layer p{
@@ -514,7 +519,7 @@ pointer-events: none;
     width: 70vw;
   }
   .about-content h3 {
-    color: var(--main-color);
+    color:  #3498db;
     display: flex;
     justify-content: center;
     align-items: center;
