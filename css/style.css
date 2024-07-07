@@ -345,27 +345,9 @@ pointer-events: none;
   text-align: center;
   margin-bottom: 3rem;
 }
-.contact form .input-box{
- 
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.contact form .input-box input, .contact form textarea{
-  width: 100%;
-  padding: 1.5rem;
-  font-size: 1.6rem;
-  color: var(--text-color);
-  background: var(--second-bg-color);
-  border-radius: .8rem ;
-  margin: .7rem 0;
-}
-.contact form .input-box input{
-  width: 49%;
-}
-.contact form textarea{
-  resize: none;
-}
+
+
+
 .contact form .btn{
   margin-top: 2rem;
   cursor: pointer;
@@ -433,14 +415,14 @@ color: var(--main-color);
   margin-left: 8rem;
 pointer-events: none;
 }
-.cont{
-  
-}
 
 .portfolio-box{
   margin-top: 6rem;
   width: 80%;
   
+}
+.contact{
+  background: var(--second-bg-color);
 }
 
 }
@@ -460,6 +442,9 @@ section {
 }
 .contact{
   min-height: auto;
+}
+.contact{
+  background-color: var(--second-bg-color);
 }
 
 
@@ -593,4 +578,155 @@ align-items: center;
 }
 .m{
   margin-top: 5rem;
+}
+
+
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+.sdya{
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+.sdya .skill-box{
+    width: 100%;
+    margin: 25px 0;
+}
+.skill-box .skill-title{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+.skill-box .skill-bar{
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(0,0,0,0.1);
+}
+.skill-bar .skill-per {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 0;
+    border-radius: 6px;
+    background: #5e60ce;
+    opacity: 0;
+    transition: width 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.skill-per.start-animation {
+    opacity: 1;
+}
+
+.skill-per.html.start-animation {
+    width: 95%;
+    transition-delay: 0.4s;
+}
+
+.skill-per.css.start-animation {
+    width: 80%;
+    transition-delay: 0.45s;
+}
+
+.skill-per.javascript.start-animation {
+    width: 50%;
+    transition-delay: 0.4s;
+}
+
+.skill-per.reactjs.start-animation {
+    width: 60%;
+    transition-delay: 0.6s;
+}
+
+.skill-per.git.start-animation {
+    width: 20%;
+    transition-delay: 0.6s;
+}
+
+.skill-per.php.start-animation {
+    width: 40%;
+    transition-delay: 0.6s;
+}
+
+.skill-per .tooltip {
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: #4070f4;
+    z-index: 1;
+}
+
+.tooltip::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background-color: #4070f4;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: #1b1b1b;
+  white-space: nowrap;
+  position: relative;
+  
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width:110px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #1b1b1b);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #1b1b1b);
+}
+
+
+
+.logos-slide {
+  display: inline-block;
+  animation: 15s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 7px;
 }
