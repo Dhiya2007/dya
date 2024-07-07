@@ -62,3 +62,23 @@ const typed = new Typed('.multiple-text',{
   loop:true
 });
 
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  let observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('start-animation');
+        observer.unobserve(entry.target); // لإيقاف المراقبة بعد بدء الأنميشن
+      }
+    });
+  }, { threshold: 0.1 });
+
+  let elements = document.querySelectorAll('.skill-per');
+  elements.forEach(element => {
+    observer.observe(element);
+  });
+});
