@@ -729,7 +729,7 @@ align-items: center;
 }
 
 .scroller[data-speed="fast"] {
-  --_animation-duration: 12s;
+  --_animation-duration: 22s;
 }
 
 .scroller[data-speed="slow"] {
