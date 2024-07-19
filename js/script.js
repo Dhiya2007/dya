@@ -49,10 +49,10 @@ ScrollReveal({
   
   ScrollReveal().reveal('.home-content, .heading, .cards', { origin: 'top' });
   
-  ScrollReveal().reveal('.home-img, services-container,.btt, portfolio-box, contact form, .about-content p', { origin: 'bottom' });
+  ScrollReveal().reveal('.home-img, services-container,.btt, portfolio-box, contact form, .card-item, .about-content p', { origin: 'bottom' });
   ScrollReveal().reveal('.home-content h1, .about-img, .cards, .Services-box', { origin: 'left' });
   ScrollReveal().reveal('.home-content p, .about-content', { origin: 'bottom' });
-  ScrollReveal().reveal('.about-content', { origin: 'top' });
+  ScrollReveal().reveal('.about-content, .heading-ms', { origin: 'top' });
 /*==================== typed js ====================*/
 const typed = new Typed('.multiple-text',{
   strings: ['a Programmer', 'an Editor','an artist', 'a Designer'],
@@ -111,3 +111,61 @@ function addAnimation() {
     });
   });
 }
+
+      // Cards
+        let card1 = document.getElementById("card1"),
+            card2 = document.getElementById("card2"),
+            card3 = document.getElementById("card3"),
+            card4 = document.getElementById("card4"),
+            card5 = document.getElementById("card5"),
+            card_length = document.querySelectorAll(".card--card");
+
+        // container
+        let container = document.getElementById("container");
+
+        // Card List
+        let card_list = [card1, card2, card3, card4, card5];
+
+        // next function
+        let counter = 1;
+        function next() {
+            console.log("next:" + counter)
+            if (counter < card_length.length) {
+                card_list[counter].classList.add("active");
+                backgroundFunc(counter);
+                counter += 1;
+            }
+            else {
+                counter = card_length.length;
+            }
+        }
+
+        function prev() {
+            if (counter > 1) {
+                card_list[counter - 1].classList.remove("active");
+                counter -= 1;
+            }
+            else {
+                counter = 1;
+            }
+            backgroundFunc(counter-1);
+            console.log("prev:" + counter)
+        }
+        
+        // background function
+        function backgroundFunc(x) {
+            if (x == 0) {
+                container.style.background = "";
+            }
+            else if (x == 1) {
+                container.style.background = "";
+            }
+            else if (x == 2) {
+                container.style.background = "";
+            }
+            else if (x == 3) {
+                container.style.background = ""
+            }
+        }
+
+  
