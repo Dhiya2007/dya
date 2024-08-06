@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Fustat:wght@200..800&family=Zain:wght@200;300;400;700;800;900&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 * {
 
@@ -605,6 +608,14 @@ align-items: center;
 
 /* ===== Google Font Import - Poppins ===== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+.zain {
+  font-family: "Zain", sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+      color: #F5F5F5;
+    margin-top: 28px;
+}
 
 .sdya{
     position: relative;
