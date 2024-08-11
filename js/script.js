@@ -41,7 +41,7 @@ sections.forEach(sec => {
 /*==================== scroll reveal ====================*/
 
 ScrollReveal({
-  reset: true,
+  reset: false,
   distance: '80px',
   duration:2000,
   delay:200
@@ -168,4 +168,82 @@ function addAnimation() {
             }
         }
 
-  
+
+ document.getElementById('reviewForm').addEventListener('submit', function(event) {
+
+    // السماح بالإرسال الافتراضي للنموذج
+    setTimeout(() => {
+      event.target.reset(); // مسح البيانات بعد التأخير
+    }, 3000); // تأخير 5 ثوانٍ
+
+    // لا نحتاج إلى منع الإرسال، النموذج سيُرسل كالمعتاد
+  });
+    document.querySelectorAll('.stars-container .star').forEach(star => {
+        star.addEventListener('click', function() {
+            const value = this.getAttribute('data-value');
+            document.getElementById('stars').value = value;
+            updateStars(value);
+        });
+        star.addEventListener('mouseover', function() {
+            const value = this.getAttribute('data-value');
+            updateStars(value);
+        });
+        star.addEventListener('mouseout', function() {
+            const value = document.getElementById('stars').value;
+            updateStars(value);
+        });
+    });
+
+    function updateStars(value) {
+        document.querySelectorAll('.stars-container .star').forEach(star => {
+            if (parseInt(star.getAttribute('data-value')) <= value) {
+                star.classList.add('checked');
+            } else {
+                star.classList.remove('checked');
+            }
+        });
+    }
+    
+    
+
+  document.getElementById('reviewForm').addEventListener('submit', function(event) {
+    const emailInput = document.getElementById('email');
+    const emailValue = emailInput.value;
+
+    // تعبير منتظم للتحقق من صحة عنوان البريد الإلكتروني لنطاق @gmail.com
+    const gmailPattern = /^[^\s@]+@gmail\.com$/;
+
+    if (!gmailPattern.test(emailValue)) {
+     alert('  تستخدم بريد مزيف  - _ -  ؟                               استخدم بريد حقيقي ليتم ارسال الرسالة');
+      emailInput.focus(); // وضع التركيز على حقل البريد الإلكتروني
+      event.preventDefault(); // منع إرسال النموذج
+    }
+  });
+    document.addEventListener('DOMContentLoaded', function() {
+        var icon = document.querySelector('.profile-preview-btn');
+        var selectItems = document.querySelector('.select-items');
+        var selectedImage = document.getElementById('profile-picture-preview');
+
+        icon.addEventListener('click', function() {
+            selectItems.classList.toggle('select-hide');
+            selectItems.style.display = selectItems.style.display === 'none' || !selectItems.style.display ? 'grid' : 'none';
+        });
+
+        document.querySelectorAll('.select-items div').forEach(function(item) {
+            item.addEventListener('click', function() {
+                var imgSrc = item.getAttribute('data-img');
+                selectedImage.src = imgSrc; // Update the selected image
+                selectItems.style.display = 'none'; // Hide the list after selection
+            });
+        });
+
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.profile-preview-btn') && !event.target.closest('.select-items')) {
+                selectItems.style.display = 'none'; // Hide the list if clicking outside
+            }
+        });
+    });
+    
+    function setImageValue(value) {
+        document.getElementById('img-value').value = value;
+    }
