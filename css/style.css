@@ -23,10 +23,16 @@ font-family: "Patua One", serif; font-weight: bold; /* سمك الخط */ color:
 pointer-events: none; transform: scale(1.1); } .portfolio-box .portfolio-layer { position: absolute; bottom: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color)); display: flex;
 justify-content: center; align-items: center; flex-direction: column; text-align: center; padding: 0 4rem; transform: translateY(100%); transition: .5s ease; } .portfolio-box:hover .portfolio-layer{ transform: translateY(0); }
 .portfolio-layer h4{ font-size: 3rem; } .portfolio-layer h3{ font-size: 2.5rem; } .portfolio-layer p{ font-size: 1.6rem; margin: .3rem 0 1rem; } .portfolio-layer a{ display: inline-flex; justify-content: center; align-items: center; width:
-5rem; height: 5rem; background: var(--text-color); border-radius: 50%; } .portfolio-layer a i{ font-size: 2rem; color: var(--second-bg-color) } @media (min-width: 1020px) { html{ font-size: 55%; } .error{ margin-left: 30%; } .logos{
+5rem; height: 5rem; background: var(--text-color); border-radius: 50%; } .portfolio-layer a i{ font-size: 2rem; color: var(--second-bg-color) } 
+@media (min-width: 800px) {
+  .lord-icon{margin-top:-20rem;
+    position: absolute;
+  } }
+@media (min-width: 1020px) { html{ font-size: 55%; } .error{ margin-left: 30%; } .logos{
 margin-left: 30%; margin-right: 30%; } .logo{ margin-left: 0rem; margin-right: 0rem; } .prob{ margin-left: 41%; } .cont{ display: flex; } .cloum h3{ margin-top: 4rem; font-size: 4rem; color: var(--main-color); } .cloum { margin-top: 10rem;
-display: cloum; } .cloum a{ margin-left: 70%; } .about-img img{ margin-left: 8rem; pointer-events: none; } .portfolio-box{ margin-top: 6rem; width: 80%; } } @media (max-width: 991px) { .header{ padding: 2rem 3%; } section { padding: 10rem
-3% 2rem; } .Services{ padding-bottom: 7rem; } } @media (max-width: 768px) { #menu-icon { display: block; } .logo-ph{ width: 4rem; } .portfolio{ padding-bottom: 7rem;} .navbar{ position: absolute; top: 100%; left: 0; width: 100%; padding:
+display: cloum; } .cloum a{ margin-left: 70%; } .about-img img{ margin-left: 8rem; pointer-events: none; } .portfolio-box{ margin-top: 6rem; width: 80%; } 
+} @media (max-width: 991px) { .header{ padding: 2rem 3%; } section { padding: 10rem
+3% 2rem; } .Services{ padding-bottom: 7rem; } } @media (max-width: 768px) { #menu-icon, #menu-icon-lord{ display: block; } .logo-ph{ width: 4rem; } .portfolio{ padding-bottom: 7rem;} .navbar{ position: absolute; top: 100%; left: 0; width: 100%; padding:
 1rem 3%; background: var(--bg-color); border-top: .1rem solid rgba(0, 0, 0, .2); box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2); display: none; } .navbar.active{ display: block; } .navbar a{ text-align: center; display: block; font-size: 2rem;
 margin: 3rem 0; } .home{ flex-direction: column; } .home-content h3{ font-size: 2.6rem; } .home-content h1{ font-size: 5rem; } .home-img img { width: 70vw; pointer-events: none; margin: 1rem 1rem 2rem; } .about { flex-direction: column; }
 .about img { pointer-events: none; margin-left: 5rem; justify-content: center; align-items: center; top: 0; width: 70vw; } .about-content h3 { color: #3498db; display: flex; justify-content: center; align-items: center; } .about-content p {
@@ -169,4 +175,7 @@ svg {
 .blue{
   padding: 0 0 1.4rem;
   background-color: #4578e3;
+}
+textarea{
+  resize: none;
 }
