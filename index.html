@@ -11,11 +11,11 @@
 		<!-- font -->
 		<link href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap" rel="stylesheet" />
 
-		<!-- Font Awesome Icons -->
-
+		<!-- Icons -->
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 		<!-- box icons -->
-		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+		<link href="https://unpkg.com/boxicons@2.1.4/css/boxic/ons.min.css" rel="stylesheet" />
 
 		<!-- custom css -->
 		<link rel="stylesheet" href="css/style.css" />
@@ -23,23 +23,76 @@
 
 	<body>
 		<!-- header design -->
-		<header class="header">
-			<a href="index.html">
-				<img class="logo-ph" src="img/logo.webp" oncontextmenu="return false;" ondragstart="return false;" onmousedown="return false;" />
-			</a>
-			<div class="logo">dya<a href="index.html"> website</a></div>
+    <div class="navbar-section">
+    <div class="navbar">
+   
+        <div class="navbar-icons">
+<img class="logo-ph"src="img/usr2.webp" />
+<a class="logo-a">dyaa</a>
 
-			<i class="bx bx-menu" id="menu-icon"></i>
+       <button class="navbar-toggle" id="navbar-toggle">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+        </button>
+    </div>
+    </div>
+    </div>
+    <div class="sidebar" id="sidebar">
+        <button class="closebtn" id="closebtn">&times;</button>
+        <a class="sidebar-a" href="#home">
+<lord-icon
+    src="https://cdn.lordicon.com/laqlvddb.json"
+    trigger="loop"
+    state="loop-smoke"
+    colors="primary:#ffffff,secondary:#ffcc00"
+    style="width:30px;height:30px">
+</lord-icon> Home</a>
+        <a href="#about">
+<lord-icon
+    src="https://cdn.lordicon.com/xzalkbkz.json"
+    trigger="loop"
+    state="hover-wave"
+    colors="primary:#ffffff,secondary:#ffcc00"
+    style="width:30px;height:30px">
+</lord-icon> About</a>
 
-			<nav class="navbar">
-				<a href="#home" class="active">Home</a>
-				<a href="#about">About</a>
-				<a href="#Talents">My Talents</a>
-				<a href="#project">Last Project</a>
-				<a href="#skills">My Skills</a>
-				<a href="#comments"> Comments</a>
-			</nav>
-		</header>
+        <a href="#talents">
+<lord-icon
+    src="https://cdn.lordicon.com/qmsejndz.json"
+    trigger="loop"
+    delay="1500"
+    colors="primary:#ffffff,secondary:#ffcc00"
+    style="width:30px;height:30px">
+</lord-icon> Talents</a>
+
+        <a href="#project">
+<lord-icon
+    src="https://cdn.lordicon.com/rahouxil.json"
+    trigger="loop"
+    colors="primary:#ffffff,secondary:#ffcc00"
+    style="width:30px;height:30px">
+</lord-icon> Project</a>
+
+        <a href="#skills">
+<lord-icon
+    src="https://cdn.lordicon.com/vcuhguff.json"
+    trigger="loop"
+    delay="1000"
+    state="hover-wink"
+    colors="primary:#ffffff,secondary:#ffcc00"
+    style="width:30px;height:30px">
+</lord-icon> skills</a>
+
+        <a href="#comments">
+<lord-icon
+    src="https://cdn.lordicon.com/wzrwaorf.json"
+    trigger="loop"
+    state="hover-conversation-alt"
+    colors="primary:#ffffff,secondary:#ffcc00"
+    style="width:30px;height:30px">
+</lord-icon>comments </a>
+    </div>
 		<!-- home section design -->
 		<section class="home" id="home">
 			<div class="home-img">
@@ -80,7 +133,7 @@
 		</section>
 
 		<!-- Talents section design -->
-		<section class="services" id="Talents">
+		<section class="services" id="talents">
 			<h2 class="heading">My <span>Talents</span></h2>
 
 			<br />
@@ -295,12 +348,13 @@
 			<div class="container">
 				<div class="review-card">
 					<div class="review-details">
+					  <i class='bx bxs-pin' ></i>
 						<div dir="rtl" class="review-header">
 							<img src="img/usr2.webp" alt="User image" />
 							<div class="reviewer">ضِيَاء الدِين</div>
 							<i class="fas fa-check-circle verified"></i>
 						</div>
-						<div dir="rtl" class="review-text">هذا مثال على شكل التعليقات</div>
+						<div dir="rtl" class="review-text">سبحان الله وبحمده، عدد خلقه، ورضا نفسه، وزنة عرشه، ومداد كلماته</div>
 						<div class="date">
 							10 August 2024
 							<div dir="ltr" class="stars">★★★★★</div>
@@ -314,7 +368,7 @@
 					<div class="review-details">
 						<div dir="rtl" class="review-header">
 							<img src="img/pfp15.jpg" alt="User image" />
-							<div class="reviewer">دحماني محمد لؤي </div>
+							<p class="reviewer">دحماني محمد لؤي </p>
 
 						</div>
 						<div dir="rtl" class="review-text">خرافيي استمر و طور من نفسك وفقك الله</div>
@@ -471,5 +525,34 @@
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0/js/select2.min.js"></script>
 		<script src="https://cdn.lordicon.com/lordicon.js"></script>
+		    <script>
+        const sidebar = document.getElementById('sidebar');
+        const toggleButton = document.getElementById('navbar-toggle');
+        const closeButton = document.getElementById('closebtn');
+
+        function toggleSidebar() {
+            if (sidebar.classList.contains('open')) {
+                sidebar.classList.remove('open');
+                sidebar.classList.add('close');
+                toggleButton.classList.remove('open');
+            } else {
+                sidebar.classList.remove('close');
+                sidebar.classList.add('open');
+                toggleButton.classList.add('open');
+            }
+        }
+
+        toggleButton.addEventListener('click', toggleSidebar);
+        closeButton.addEventListener('click', toggleSidebar);
+
+        document.addEventListener('click', function(event) {
+            if (!sidebar.contains(event.target) && !toggleButton.contains(event.target) && sidebar.classList.contains('open')) {
+                sidebar.classList.remove('open');
+                sidebar.classList.add('close');
+                toggleButton.classList.remove('open');
+            }
+        });
+
+    </script>
 	</body>
 </html>
