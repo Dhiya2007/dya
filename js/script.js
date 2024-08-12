@@ -11,7 +11,7 @@ ScrollReveal({
   ScrollReveal().reveal('.home-content, .heading, .cards', { origin: 'top' });
   
   ScrollReveal().reveal('.home-img, services-container,.btt, portfolio-box, contact form, .card-item, .about-content p', { origin: 'bottom' });
-  ScrollReveal().reveal('.home-content h1, .about-img, .cards, .Services-box', { origin: 'left' });
+  ScrollReveal().reveal('.home-content h1, .about-img, .cards, .Services-box, .navbar', { origin: 'left' });
   ScrollReveal().reveal('.home-content p, .about-content', { origin: 'bottom' });
   ScrollReveal().reveal('.about-content, .heading-ms', { origin: 'top' });
 /*==================== typed js ====================*/
