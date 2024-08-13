@@ -8,8 +8,6 @@
 		<title>dya</title>
 		<link rel="icon" type="https://raw.githubusercontent.com/Dhiya2007/photo/main/ic.png" href="https://raw.githubusercontent.com/Dhiya2007/photo/main/ic.png" />
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0/css/select2.min.css" rel="stylesheet" />
-		<!-- font -->
-		<link href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap" rel="stylesheet" />
 
 		<!-- Icons -->
 		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -26,8 +24,8 @@
     <div class="navbar-section">
     <div class="navbar">
    
-        <div class="navbar-icons">
-<img class="logo-ph"src="img/usr2.webp" />
+        <div class="navbar-icons"><a href="index.html">
+<img class="logo-ph"src="img/usr2.webp" /></a>
 <a class="logo-a">dyaa</a>
 
        <button class="navbar-toggle" id="navbar-toggle">
@@ -107,7 +105,7 @@
 				<div class="social-media">
 					<a href="https://www.facebook.com/share/XzWgcEyuMToPTovU/?mibextid=qi2Omg"><i class="bx bxl-facebook-circle"></i></a>
 					<a href="https://www.instagram.com/dyaa_edin?igsh=MWpkbGtjcTRzOGVlcg=="><i class="bx bxl-instagram-alt"></i></a>
-					<a href="https://youtube.com/@drokard?si=YjKwgsio6fNUSzNr"><i class="bx bxl-youtube"></i></a>
+					<a href="mailto:dyaa.contact@gmail.com"><i class="bx bxl-gmail"></i></a>
 					<a href="http://t.me/m_dhiya_m"><i class="bx bxl-telegram"></i></a>
 				</div>
 			</div>
@@ -126,7 +124,7 @@
 						<h3 class="mmn">front-end Developer!</h3>
 						<p>"My name is Diaa Eddin, a 17-year-old programmer, designer, and photo/video editor. I seamlessly blending technical prowess with artistic ingenuity to deliver perfect work."</p>
 						<p>in this website you can find all my acounts and all my Project</p>
-						<a href="#Talents" class="btn">Read More</a>
+						<a href="#talents" class="btn">Read More</a>
 					</div>
 				</div>
 			</div>
@@ -367,7 +365,7 @@
 				<div class="review-card">
 					<div class="review-details">
 						<div dir="rtl" class="review-header">
-							<img src="img/pfp15.jpg" alt="User image" />
+							<img src="img/luai.webp" alt="User image" />
 							<p class="reviewer">دحماني محمد لؤي </p>
 
 						</div>
@@ -423,6 +421,15 @@
 									<div data-value="pfp12" data-img="img/pfp12.webp" onclick="setImageValue('pfp12')"><img src="img/pfp12.webp" alt="Profile 12" /></div>
 									<div data-value="pfp13" data-img="img/pfp13.webp" onclick="setImageValue('pfp13')"><img src="img/pfp13.webp" alt="Profile 13" /></div>
 									<div data-value="pfp14" data-img="img/pfp14.webp" onclick="setImageValue('pfp14')"><img src="img/pfp14.webp" alt="Profile 14" /></div>
+									
+									<div data-value="pfp15" data-img="img/pfp15.webp" onclick="setImageValue('pfp15')"><img src="img/pfp15.webp" alt="Profile 15" /></div>
+									<div data-value="pfp16" data-img="img/pfp16.webp" onclick="setImageValue('pfp16')"><img src="img/pfp16.webp" alt="Profile 16" /></div>
+									<div data-value="pfp17" data-img="img/pfp17.webp" onclick="setImageValue('pfp17')"><img src="img/pfp17.webp" alt="Profile 17" /></div>
+									<div data-value="pfp18" data-img="img/pfp18.webp" onclick="setImageValue('pfp18')"><img src="img/pfp18.webp" alt="Profile 18" /></div>
+									<div data-value="pfp19" data-img="img/pfp19.webp" onclick="setImageValue('pfp19')"><img src="img/pfp19.webp" alt="Profile 19" /></div>
+									<div data-value="pfp20" data-img="img/pfp20.webp" onclick="setImageValue('pfp20')"><img src="img/pfp20.webp" alt="Profile 20" /></div>
+
+
 									<!-- أضف المزيد من الصور هنا -->
 								</div>
 							</div>
@@ -497,10 +504,6 @@
   <circle class="drop drop6" cx="17.2" cy="4.8" r="9.2"  />
   <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
  </g>  
-    <!-- g mask="url(#xxx)">
-    <path   id="wave1"  class="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
-    </g>
-  </g -->
 
 </svg>
 
@@ -508,7 +511,7 @@
   <p class="footer p">
     © 2024 Developed by
 
-   <a class="a underline" href="https://dhiya.netlify.app">ᗪㄚ卂卂</a>
+   <a class="a underline" href="index.html">ᗪㄚ卂卂</a>
    </p>
    </div>
 </footer>
@@ -525,34 +528,7 @@
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0/js/select2.min.js"></script>
 		<script src="https://cdn.lordicon.com/lordicon.js"></script>
-		    <script>
-        const sidebar = document.getElementById('sidebar');
-        const toggleButton = document.getElementById('navbar-toggle');
-        const closeButton = document.getElementById('closebtn');
+		    
 
-        function toggleSidebar() {
-            if (sidebar.classList.contains('open')) {
-                sidebar.classList.remove('open');
-                sidebar.classList.add('close');
-                toggleButton.classList.remove('open');
-            } else {
-                sidebar.classList.remove('close');
-                sidebar.classList.add('open');
-                toggleButton.classList.add('open');
-            }
-        }
-
-        toggleButton.addEventListener('click', toggleSidebar);
-        closeButton.addEventListener('click', toggleSidebar);
-
-        document.addEventListener('click', function(event) {
-            if (!sidebar.contains(event.target) && !toggleButton.contains(event.target) && sidebar.classList.contains('open')) {
-                sidebar.classList.remove('open');
-                sidebar.classList.add('close');
-                toggleButton.classList.remove('open');
-            }
-        });
-
-    </script>
 	</body>
 </html>
