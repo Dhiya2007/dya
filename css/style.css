@@ -566,7 +566,7 @@ span {
   transition-delay: 0.4s;
 }
 .skill-per.reactjs.start-animation {
-  width: 25%;
+  width: 20%;
   transition-delay: 0.6s;
 }
 .skill-per.git.start-animation {
@@ -575,6 +575,14 @@ span {
 }
 .skill-per.php.start-animation {
   width: 40%;
+  transition-delay: 0.6s;
+}
+.skill-per.tailwind.start-animation {
+  width: 60%;
+  transition-delay: 0.6s;
+}
+.skill-per.bootstrap.start-animation {
+  width: 28%;
   transition-delay: 0.6s;
 }
 .skill-per .tooltip {
@@ -1205,4 +1213,85 @@ textarea {
     -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
     inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
     inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+}
+:root {
+  --marquee-width: 80vw;
+  --marquee-height: 20rem;
+  /* --marquee-elements: 12; */ /* defined with JavaScript */
+  --marquee-elements-displayed: 5;
+  --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+  --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+}
+
+.marquee {
+  width: var(--marquee-width);
+  height: var(--marquee-height);
+  background-color: #111;
+  color: #eee;
+  overflow: hidden;
+  position: relative;
+}
+.marquee:before, .marquee:after {
+  position: absolute;
+  top: 0;
+  width: 10rem;
+  height: 100%;
+  content: "";
+  z-index: 1;
+}
+.marquee:before {
+  left: 0;
+  background: linear-gradient(to right, #111 0%, transparent 100%);
+}
+.marquee:after {
+  right: 0;
+  background: linear-gradient(to left, #111 0%, transparent 100%);
+}
+.marquee-content {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  animation: scrolling var(--marquee-animation-duration) linear infinite;
+}
+/* .marquee-content:hover {
+  animation-play-state: paused;
+} */
+@keyframes scrolling {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); }
+}
+.marquee-content li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  flex-shrink: 0;
+  width: var(--marquee-element-width);
+  max-height: 100%;
+  font-size: calc(var(--marquee-height)*3/4); /* 5rem; */
+  white-space: nowrap;
+}
+
+.marquee-content li img {
+  width: 100%;
+  /* height: 100%; */
+  border: 2px solid #eee;
+}
+
+@media (max-width: 720px) {
+  :root {
+    --marquee-width: 100vw;
+    --marquee-height: 10rem;
+    --marquee-elements-displayed: 3;
+  }
+  .marquee:before, .marquee:after { width: 5rem; }
+}
+.marquee-content i{
+  font-size: 5rem;
+}
+
+.marquee-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
