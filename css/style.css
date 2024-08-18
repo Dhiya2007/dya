@@ -40,10 +40,11 @@ body {
   justify-content: space-between;
 }
 .logo-ph {
-  width: 70px;
-  padding: 10px;
+  width: 40px;
+  padding-top: 14px;
+  padding-bottom: 10px;
   border-radius: 50px;
-  margin-left: -2rem;
+  margin-left: ;
 }
 .navbar-section {
   display: flex;
@@ -53,12 +54,12 @@ body {
   position: fixed;
   top: 0;
   border-radius: 40px;
-  width: 250px;
+  width: 240px;
   backdrop-filter: blur(40px);
   text-align: center;
   z-index: 100;
   align-items: center;
-  border: 1px solid #ffffffa1;
+  border: 1px solid #ffffff71;
   padding: 0 20px;
   margin: 1rem;
 }
@@ -73,16 +74,26 @@ body {
 }
 .navbar-toggle.open .bar1 {
   transform: rotate(45deg) translate(5px, 6px);
+  width: 25px;
 }
 .navbar-toggle.open .bar2 {
   opacity: 0;
 }
 .navbar-toggle.open .bar3 {
   transform: rotate(-45deg) translate(5px, -6px);
+  width: 25px;
 }
-.navbar-toggle .bar {
+.navbar-toggle .bar{
   display: block;
-  width: 30px;
+  width: 35px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px auto;
+  transition: 0.4s;
+}
+ .bar4 {
+  display: block;
+  width: 20px;
   height: 3px;
   background-color: #fff;
   margin: 6px auto;
@@ -182,9 +193,10 @@ section {
 }
 .logo-a {
   color: #0fe;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   text-shadow: 0 0 25px #0fe;
-  font-weight: 600;
+  font-weight: 400;
+  font-family: "Pacifico";
   cursor: default;
   padding: 1.5rem;
 }
@@ -1171,10 +1183,10 @@ textarea {
   gap: 4px;
 }
 .edu {
-  font-family: "Edu VIC WA NT Beginner", cursive;
+  font-family: "Robot";
 }
 .cloum p {
-  font-family: "Rubik", sans-serif;
+  font-family: "Roboto";
 }
 .frame {
   display: flex;
