@@ -284,11 +284,12 @@ span {
 .home-content h1 .btn:hover {
   box-shadow: none;
 }
-.about {
+.about-content{
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 2rem;
+}
+.about {
   background: var(--second-bg-color);
 }
 .multiple-text {
@@ -365,9 +366,7 @@ span {
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
-  .heading-about {
-    margin-top: 10rem;
-  }
+
   .cont {
     display: flex;
   }
@@ -388,9 +387,6 @@ span {
   .lord-icon {
     margin-top: -10rem;
     position: relative;
-  }
-  .prob {
-    margin-left: 41%;
   }
   .cont {
     display: flex;
@@ -952,6 +948,11 @@ h1 {
   .review-text-en {
     font-size: 4rem;
   }
+  .about-content{
+  gap: 2rem;
+  padding-right: 12rem;
+  padding-left: 12rem;
+}
 }
 @media (max-width: 768px) {
   .review-card {
@@ -1168,10 +1169,7 @@ svg {
     padding-bottom: 7rem;
   }
 }
-.heading-about {
-  top: 110vh;
-  position: absolute;
-}
+
 @keyframes bounce {
   from {
     transform: translateY(0px);
