@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
                 } else if (daysDiff <= 2) {
                     displayText = `قبل ${daysDiff} يوم`;
-                } else if (daysDiff <= 7) {
+                } else if (daysDiff <= 6) {
                     displayText = `قبل ${daysDiff} أيام`;
                 } else if (weeksDiff <= 2) {
                     displayText = `قبل ${weeksDiff} أسبوع${weeksDiff === 1 ? '' : ''}`;
