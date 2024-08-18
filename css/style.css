@@ -84,14 +84,7 @@ body {
   transform: rotate(-45deg) translate(5px, -6px);
   width: 25px;
 }
-.navbar-toggle .bar{
-  display: block;
-  width: 35px;
-  height: 3px;
-  background-color: #fff;
-  margin: 6px auto;
-  transition: 0.4s;
-}
+
 .sidebar {
   height: 100%;
   width: 250px;
@@ -133,9 +126,16 @@ body {
 .close {
   left: -100%;
 }
-.bar {
+
+.navbar-toggle .bar{
   font-size: 1rem;
   border-radius: 40px;
+  display: block;
+  width: 35px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px auto;
+  transition: 0.4s;
 }
  .bar4 {
   display: block;
@@ -157,7 +157,7 @@ body {
     display: none;
   }
   .navbar-toggle {
-    margin-right: -1rem;
+    margin-right: 0;
     margin-left: 6rem;
     background-color: transparent;
   }
@@ -371,6 +371,12 @@ span {
   .cont {
     display: flex;
   }
+  .services h2{
+    margin-bottom: 4rem;
+  }
+  .services{
+    padding: 12rem 15%;
+  }
 }
 @media (min-width: 1020px) {
   html {
@@ -410,6 +416,7 @@ span {
     margin-top: 6rem;
     width: 80%;
   }
+
   .about-img {
     margin-top: -4rem;
   }
@@ -477,6 +484,7 @@ span {
     justify-content: center;
     align-items: center;
   }
+
   .Services h2 {
     margin-bottom: 3rem;
   }
@@ -694,7 +702,7 @@ span {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   max-width: 1250px;
-  margin: 150px auto;
+  margin: 40px auto;
   padding: 20px;
   gap: 20px;
 }
