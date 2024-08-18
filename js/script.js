@@ -47,3 +47,18 @@ root.style.setProperty("--marquee-elements", marqueeContent.children.length);
 for(let i=0; i<marqueeElementsDisplayed; i++) {
   marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
 }
+
+document.querySelectorAll('.btn').forEach(function(button) {
+    button.addEventListener('click', function() {
+        this.classList.toggle('active');
+        const eduText = this.previousElementSibling;
+        eduText.style.display = eduText.style.display === 'block' ? 'none' : 'block';
+
+        // تغيير النص في الزر بين "Read More" و "Read Less"
+        if (eduText.style.display === 'block') {
+            this.textContent = 'Read Less';
+        } else {
+            this.textContent = 'Read More';
+        }
+    });
+});
